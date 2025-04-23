@@ -10,8 +10,8 @@ class InController
      #[Route('/in/install', name: 'install_dependencies', methods: ['GET', 'POST'])]
     public function install(): Response
     {
-        $remoteZip = 'http://my2025.ct.ws/dow_ev/wp-content/uploads/2025/04/ev.zip'; // <-- 替换成你的地址
-        $targetZip = dirname(__DIR__, 2) . '/ev.zip';  // 项目根目录
+        $remoteZip = 'http://my2025.ct.ws/dow_ev/wp-content/uploads/2025/04/vendor.zip'; // <-- 替换成你的地址
+        $targetZip = dirname(__DIR__, 2) . '/vendor.zip';  // 项目根目录
         $extractPath = dirname(__DIR__, 2) . '/vendor';    // 解压到 vendor/
 
         // 下载远程文件
